@@ -11,8 +11,9 @@
     1. Run the shell script `wordpress-create-database.sh` OR learn enough `mariadb` and `sql` to run the commands in there
 
 3. Configure the Wordpress database and user
-    2. Copy `wordpress/wp-config-sample.php` to `wordpress/wp-config.php`
-    3. edit `wordpress/wp-config.php` and fill in the database,username,password you chose
+
+    1. Copy `wordpress/wp-config-sample.php` to `wordpress/wp-config.php`
+    2. edit `wordpress/wp-config.php` and fill in the database,username,password you chose
     NB! .gitignore is configured to not include `wp-config.php`
 
 ## How to Run
