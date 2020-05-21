@@ -30,6 +30,7 @@ dotnet new -i "Peachpie.Templates::*"
 dotnet new web -lang PHP
 ```
 3. Download wordpress e.g. `curl https://wordpress.org/latest.tar.gz | tar xvz`
-4. Copy the msbuildproj from the Website directory to your wordpress directory
+4. Copy the msbuildproj that the PeachPie template created from the Website directory to your wordpress directory
 5. Edit the Solution and the Server project created by the peachpie template to point to the new location
 6. Fix compilation errors. I had to remove 2 files to get it to compile, which I did by editing the project file rather than removing the files
+7. Add `.UseWebRoot("../wordpress/")` to the Server's HostBuilder in `Program.cs` 
