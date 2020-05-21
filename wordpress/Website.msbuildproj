@@ -1,0 +1,14 @@
+<Project Sdk="Peachpie.NET.Sdk/0.9.981">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>PeachPie1</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="**/*.php" />
+    <Compile Remove="wp-content/plugins/akismet/class.akismet-cli.php" />
+    <Compile Remove="wp-includes/class-json.php" />
+  </ItemGroup>
+</Project>
